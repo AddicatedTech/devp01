@@ -1,0 +1,26 @@
+上下文 RequestContext ，AppContext
+
+当一个flask请求进来之后，存储在环境变量enviorn中，
+完成请求之后会自动调用最小原形中的app.__call__里面的函数 wsgi_app()
+wsgi_app() 首先会初始化一个RequestContext(environ)并执行ctx.push()
+将这个上下文推入一个栈中
+
+request ctx_push() 去判断是否有appContext() 如果没有，则push过去
+
+app包结构
+   -- init.py
+        详细看app目录下 init方法 ，
+   -- config.py/config包
+   -- static/
+   -- templates/
+   -- main/
+
+路由注册与导入
+
+
+
+
+
+代码思路养成，如果一个属性，对象，在很多地方都被引用，
+可以专门使用一个类来存放该属性，对象，
+之后通过类直接进行调用即可，达到代码的复用。
