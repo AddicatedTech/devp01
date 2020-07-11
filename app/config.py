@@ -10,6 +10,7 @@
 class BaseConfig:
 	PER_PAGE = 10  # 每页显示数据数
 	DEBUG = False
+	SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:123456@localhost:3306/demo'
 
 class DevelopConfig(BaseConfig):
 	DEBUG = True
