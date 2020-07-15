@@ -1,5 +1,3 @@
-
-
 # 各种各样的配置，在项目规模小的时候可以单独使用一个py文件用来储存配置
 # 项目规模大的时候，最好使用一个包，里面存放各种环境下的配置
 # 当有共有配置比较多的时候，使用一个类，然后让其他类进行继承即可
@@ -8,9 +6,10 @@
 # 配置需要注意的点
 # 1，大写  2，几种导入方式
 class BaseConfig:
-	PER_PAGE = 10  # 每页显示数据数
-	DEBUG = False
+	PER_PAGE = 5  # 每页显示数据数
+	DEBUG = True
 	SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:123456@localhost:3306/demo'
+	SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 class DevelopConfig(BaseConfig):
 	DEBUG = True

@@ -1,10 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# @Time    : 2020/7/11 17:21
-# @Author  : Addicated
-# @Site    : 
-# @File    : views.py
-# @Software: PyCharm
 # from app import app
 #
 # @app.route("/")
@@ -46,3 +39,5 @@
 # amaze-ui
 # semantic-UI
 # bootstrap
+# ------------------7.12
+# 蓝图的功能
